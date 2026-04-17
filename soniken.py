@@ -79,4 +79,11 @@ for name, score in students.items():
     else:
         print("Certificate: Not Eligible")
 
-    
+# Step 5: Print star pattern based on score
+
+    print("Stars:")
+    if score == 0:
+        print("(No stars)")   # If score is 0, print nothing or message
+    else:
+        for i in range(score):
+            print("*" * (i + 1))   # Print increasing stars
