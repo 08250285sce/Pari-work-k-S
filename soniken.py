@@ -1,6 +1,6 @@
-# Step 1: Take input of two student IDs
-id1 = int(input("Enter Student 1 ID: "))  # Input first student ID
-id2 = int(input("Enter Student 2 ID: "))  # Input second student ID
+# Step 1: we have to take the input as the last two digits of the student ID of both students.
+id1 = int(input("Enter Student 1 ID: "))  # take input of first student ID
+id2 = int(input("Enter Student 2 ID: "))  # take input of second student ID
 
 # Extract last two digits using modulus (%) operator
 last1 = id1 % 100   # Gets last two digits of first ID
@@ -13,13 +13,13 @@ unique_value = (last1 + last2) % 10   # Add and take mod 10
 print("Unique value:", unique_value)
 
 
-# Step 2: Store student names in a dictionary
-students = {}   # Create empty dictionary
+# Step 2: and after getting the unique value we have to store the student names in the dictionary
+students = {}   # after storing create empty dictionary
 
 while True:
     name = input("Enter student name (or type 'exit' to stop): ")
     
-    # Stop loop if user types 'exit'
+    # the loop will continue until we stop so Stop the loop if incase user types 'exit'
     if name.lower() == "exit":
         break
     
@@ -36,7 +36,7 @@ while True:
 for name in students:
     print(f"Quiz for {name}")
     
-    score = 0   # Initialize score for each student
+    score = 0   # Initialize score for the each student for the correct answers
 
     # Question 1
     ans = int(input(f"{unique_value} + 2 = "))
@@ -57,7 +57,7 @@ for name in students:
     students[name] = score
 
 
-# Step 4: Display results, performance, certificate, and stars
+# Step 4: show the  results, performance, certificate, and stars of each students accordingly
 for name, score in students.items():
     print(f"{name}'s Score:", score)
 
