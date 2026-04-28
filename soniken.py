@@ -34,7 +34,7 @@ while True:
 
 # Step 3: Conduct quiz for each student
 for name in students:
-    print(f"\nQuiz for {name}")
+    print(f"Quiz for {name}")
     
     score = 0   # Initialize score for each student
 
@@ -59,7 +59,7 @@ for name in students:
 
 # Step 4: Display results, performance, certificate, and stars
 for name, score in students.items():
-    print(f"\n{name}'s Score:", score)
+    print(f"{name}'s Score:", score)
 
     # Determine performance level
     if score == 3:
